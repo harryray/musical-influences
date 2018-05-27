@@ -73,7 +73,8 @@ input[type="text"] {
 }
 input[type="submit"] {
     -webkit-appearance: none;
-    background-color: green;
+    background-color: $primary-bgc;
+    color:white;
     outline: none;
     border: none;
     display: inline-block;
