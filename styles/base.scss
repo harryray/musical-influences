@@ -70,6 +70,7 @@ input[type="text"] {
     border-bottom: 1px solid rgba(50,50,50,0.4);
     display: inline-block;
     box-sizing:border-box;
+    height:45px;
 }
 input[type="submit"] {
     -webkit-appearance: none;
@@ -82,4 +83,5 @@ input[type="submit"] {
     padding: 11px 33px;
     text-align: center;
     box-sizing:border-box;
+    height:45px;
 }
