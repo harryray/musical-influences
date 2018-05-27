@@ -2,22 +2,42 @@ $primary-bgc: #33ff99;
 $ghost-button: white;
 $text-color: #666;
 
-@keyframes FadeIn {
-	from {
-		opacity:0;
-	}
-	to {
-		opacity:1;
-	}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 body {
     color: $text-color;
     font-family: sans-serif;
     margin: 0;
 	font-family: 'Tajawal',sans-serif;
 	font-weight:400;
-	opacity:0;
-	animation:fadeIn 0.66s ease-in-out;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s; 
+   	animation: fadein 2s;
 }
 h1, h2, h3 {
 	font-weight:500;
