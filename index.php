@@ -60,5 +60,7 @@
 	</div>
 </div>
 </section>
-
+</body>
+<script src="/js/artists.js"></script>
+</html>
 <!-- http://ws.audioscrobbler.com/2.0/?method=artist.getSimilar&artist=[ARTIST]&api_key=95be8d664959f5402c7f75142e65f6ec -->
