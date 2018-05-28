@@ -5,14 +5,15 @@
 <link rel="stylesheet" href="styles/base.css" />
 <link rel="stylesheet" href="styles/homepage.css" />
 <link href="https://fonts.googleapis.com/css?family=Tajawal:400,500" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
-<body>
+<body ng-app="musicalInfluences" ng-controller="mi_Controller">
 <header>
 </header>
 <section>
-<form action="/" name="artist_search" class="center-center-absolute" ng-submit="callback()">
+<form action="/" name="artist_search" class="center-center-absolute" ng-submit="getInfluences()">
 	<h1>Enter an artist below:</h1>
-	<input id="artist_name" name="artist_name" placeholder="Go ahead - type something..." type="text" /><input id="artist_submit" name="artist_submit" value="Search!" type="submit" />
+	<input id="artist_name" name="artist_name" placeholder="Go ahead - type something..." type="text" ng-model="artistName" /><input id="artist_submit" name="artist_submit" value="Search!" type="submit" />
 </form>
 </section>
 <section>
@@ -22,42 +23,15 @@
 	<h3>[ARTIST]</h3>
 </div>
 <div id="influence-cards">
-	<div class="influence-card">
-		<img src="" alt="[ARTIST]" />
-		<h3>[ARTIST]</h3>
+
+	<div class="influence-card" ng-repeat="influence in influences">
+		<img src="{{influence.image}}" alt="{{influence.name}}" />
+		<h3>{{influence.name}}</h3>
 		<div class="top-track">
+			<!--            -->
 		</div>
 	</div>
-	<div class="influence-card">
-		<img src="" alt="[ARTIST]" />
-		<h3>[ARTIST]</h3>
-		<div class="top-track">
-		</div>
-	</div>
-	<div class="influence-card">
-		<img src="" alt="[ARTIST]" />
-		<h3>[ARTIST]</h3>
-		<div class="top-track">
-		</div>
-	</div>
-	<div class="influence-card">
-		<img src="" alt="[ARTIST]" />
-		<h3>[ARTIST]</h3>
-		<div class="top-track">
-		</div>
-	</div>
-	<div class="influence-card">
-		<img src="" alt="[ARTIST]" />
-		<h3>[ARTIST]</h3>
-		<div class="top-track">
-		</div>
-	</div>
-	<div class="influence-card">
-		<img src="" alt="[ARTIST]" />
-		<h3>[ARTIST]</h3>
-		<div class="top-track">
-		</div>
-	</div>
+
 </div>
 </section>
 </body>

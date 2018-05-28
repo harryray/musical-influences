@@ -4,3 +4,5 @@ function Artist('artist') {
 	this.genre = genre;
 	this.topTrack = function();
 }
+
+angular.module('musicalInfluences',[]);
