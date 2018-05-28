@@ -5,4 +5,7 @@ function Artist(artist) {
 	this.topTrack = function(){};
 }
 
-angular.module('musicalInfluences',[]);
+angular.module('musicalInfluences',[])
+.controller("mi_Controller",function(){
+	console.log('Controller "mi_Controller" created!');
+})
