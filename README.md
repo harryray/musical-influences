@@ -6,8 +6,10 @@ Well, this is a new project that I'm gonna be working on for a little while. Ess
 
 ## You should figure that process out. That sounds great, though - what're you going to build in?
 
-I'm planning to upskill myself a little, working with new stuff that I don't have too much experience with - namely, Object-Oriented Vanilla JavaScript, and a pre-processor for my CSS, SASS. I might try to use something for my HTML, too. Maybe Pug, because, let's face it, pugs are pretty cool.
+I'm planning to upskill myself a little, working with new stuff that I don't have too much experience with - namely, Object-Oriented Vanilla JavaScript, and a pre-processor for my CSS, SASS. I'm also going to be using AngularJS. I might try to use something for my HTML, too. 
+
+Maybe Pug, because, let's face it, pugs are pretty cool.
 
 ## They are. What's this project called, by the way?
 
-Ah - that's the thing. It's called _Musical Influences_ for now, because I am not a clever man. I'll get right on to thinking of a good title, don't you worry.
+It's called _Musical Influences_, for now. I'll figure out a clever name further down the road.

@@ -10,7 +10,7 @@
 <header>
 </header>
 <section>
-<form action="/inc/form_handler.php" name="artist_search" class="center-center-absolute">
+<form action="/" name="artist_search" class="center-center-absolute" ng-submit="callback()">
 	<h1>Enter an artist below:</h1>
 	<input id="artist_name" name="artist_name" placeholder="Go ahead - type something..." type="text" /><input id="artist_submit" name="artist_submit" value="Search!" type="submit" />
 </form>
