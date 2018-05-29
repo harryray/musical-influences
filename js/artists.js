@@ -6,6 +6,6 @@ function Artist(artist) {
 }
 
 angular.module('musicalInfluences',[])
-.controller("mi_Controller",function(){
+.controller("mi_Controller",function($scope){
 	console.log('Controller "mi_Controller" created!');
 })
