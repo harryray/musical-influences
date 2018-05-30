@@ -23,11 +23,11 @@
 	<h3>[ARTIST]</h3>
 </div>
 <div id="influence-cards">
-{{ mi_Controller.artistName }}
-{{ influences }}
 	<div class="influence-card" ng-repeat="influence in influences">
+		{{influence}}
+		{{influence.artist}}
 		<img src="{{influence._image}}" alt="{{influence._name}}" />
-		<h3 ng-model="influence._name"></h3>
+		<h3>{{influence.artist.name}}</h3>
 		<div class="top-track">
 			<!--            -->
 		</div>
