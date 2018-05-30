@@ -26,6 +26,7 @@ angular.module('musicalInfluences',[])
 				res = req.responseXML.children[0];
 				console.log(res);
 				$scope.influences = res.getElementsByTagName("artist");
+				console.log($scope.influences);
 			}
 		}
 		console.log(req);
