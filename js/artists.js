@@ -11,7 +11,8 @@ angular.module('musicalInfluences',[])
 	// $scope.influences <-- used by angular ng-repeat on the front end
 
 	// Make a call on submit to last.fm API, populate $scope.influences array with results.
-	$scope.getInfluences() = function(){
+	$scope.getInfluences = function(e){
+		e.preventDefault();
 		console.log('Submit detected');
 	}
 })
