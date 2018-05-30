@@ -23,8 +23,8 @@ angular.module('musicalInfluences',[])
 		req.onreadystatechange = function(){
 			console.log(req.readyState);
 			if (req.readyState == XMLHttpRequest.DONE) {
-				console.log(req);
-				console.log(req.responseText);
+				res = req.responseXML.artist;
+				console.log(res);
 			}
 		}
 		console.log(req);
