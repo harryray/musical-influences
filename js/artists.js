@@ -17,10 +17,10 @@ angular.module('musicalInfluences',[])
 		req.send(null);
 		req.onreadystatechange = function(){
 			if (req.readyState == XMLHttpRequest.DONE) {
-				console.log(req);
 				res = JSON.parse(req.responseText);
 				console.log(res);
-				$scope.influences = res;
+				console.log(res.similarartists.artist);
+				$scope.influences = res.similarartists.artist;
 				$scope.$apply();
 			}
 		}
