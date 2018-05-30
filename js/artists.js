@@ -18,8 +18,9 @@ angular.module('musicalInfluences',[])
 		req.onreadystatechange = function(){
 			if (req.readyState == XMLHttpRequest.DONE) {
 				console.log(req);
-				res = req.responseXML.children[0];
-				$scope.influences = res.getElementsByTagName("artist");
+				res = JSON.parse(req.responseText);
+				console.log(res);
+				$scope.influences = res;
 				$scope.$apply();
 			}
 		}
