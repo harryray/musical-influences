@@ -14,5 +14,10 @@ angular.module('musicalInfluences',[])
 	$scope.getInfluences = function(e){
 		e.preventDefault();
 		console.log('Submit detected');
+		var req = new XMLHttpRequest();
+		req.open("GET","http://ws.audioscrobbler.com/2.0/?method=artist.getSimilar&artist=" + $scope.artistName + "&api_key=95be8d664959f5402c7f75142e65f6ec");
+		req.send();
+		console.log($scope.artistName);
+		console.log(req);
 	}
 })
