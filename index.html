@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Tajawal:400,500" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
 </head>
-<body ng-app="musicalInfluences" ng-controller="mi_Controller">
+<body ng-app="musicalInfluences" ng-controller="mi_Controller as c">
 <header>
 </header>
 <section>
@@ -23,8 +23,8 @@
 	<h3>[ARTIST]</h3>
 </div>
 <div id="influence-cards">
-
-	<div class="influence-card" ng-repeat="influence in influences">
+{{ c.influences }}
+	<div class="influence-card" ng-repeat="influence in c.influences">
 		<img src="{{influence.image}}" alt="{{influence.name}}" />
 		<h3>{{influence.name}}d</h3>
 		<div class="top-track">
