@@ -27,6 +27,8 @@ angular.module('musicalInfluences',[])
 				console.log(res);
 				$scope.influences = res.getElementsByTagName("artist");
 				console.log($scope.influences);
+				console.log('0000000000001');
+				$scope.$apply();
 			}
 		}
 		console.log(req);
