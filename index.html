@@ -24,10 +24,8 @@
 </div>
 <div id="influence-cards">
 	<div class="influence-card" ng-repeat="influence in influences">
-		{{influence}}
-		{{influence.artist}}
-		<img src="{{influence._image}}" alt="{{influence._name}}" />
-		<h3>{{influence.artist.name}}</h3>
+		<img src="{{influence._image}}" alt="{{influence.name}}" />
+		<h3>{{influence.name}}</h3>
 		<div class="top-track">
 			<!--            -->
 		</div>
