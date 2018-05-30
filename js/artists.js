@@ -9,7 +9,7 @@ angular.module('musicalInfluences',[])
 .controller("mi_Controller",function($scope){
 	console.log('Controller "mi_Controller" created!');
 	// $scope.influences <-- used by angular ng-repeat on the front end
-
+	$scope.influences=[];
 	// Make a call on submit to last.fm API, populate $scope.influences array with results.
 	$scope.getInfluences = function(e){
 		e.preventDefault();
@@ -24,8 +24,8 @@ angular.module('musicalInfluences',[])
 			console.log(req.readyState);
 			if (req.readyState == XMLHttpRequest.DONE) {
 				res = req.responseXML.children[0];
-				console.log(req.responseXML);
 				console.log(res);
+				$scope.influences = res.getElementsByTagName("artist");
 			}
 		}
 		console.log(req);
