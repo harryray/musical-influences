@@ -8,4 +8,10 @@ function Artist(artist) {
 angular.module('musicalInfluences',[])
 .controller("mi_Controller",function($scope){
 	console.log('Controller "mi_Controller" created!');
+	// $scope.influences <-- used by angular ng-repeat on the front end
+
+	// Make a call on submit to last.fm API, populate $scope.influences array with results.
+	$scope.getInfluences() = function(){
+		console.log('Submit detected');
+	}
 })
