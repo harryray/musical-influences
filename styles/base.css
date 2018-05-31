@@ -94,5 +94,9 @@ div#influence-cards {
   box-sizing: border-box;
   padding: 5% 2%;
   margin: 1%; }
+.influence-card img {
+  border-radius: 100%;
+  border: 7.77px solid white;
+  box-shadow: 0px 2px 10px 1px #333; }
 
 /*# sourceMappingURL=base.css.map */
