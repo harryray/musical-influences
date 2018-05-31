@@ -20,6 +20,7 @@ angular.module('musicalInfluences',[])
 				res = JSON.parse(req.responseText);
 				console.log(res);
 				console.log(res.similarartists.artist);
+				console.log(res.similarartists.artist[0]['image'][2]["#text"]);
 				$scope.influences = res.similarartists.artist;
 				$scope.$apply();
 			}
