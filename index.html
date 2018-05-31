@@ -9,6 +9,12 @@
 </head>
 <body ng-app="musicalInfluences" ng-controller="mi_Controller as c">
 <header>
+<div id="skins-color">
+	<select name="skin-selector">
+		<option value="default" selected>Default</option>
+		<option value="dusk">Dusk</option>
+	</select>
+</div>
 </header>
 <section>
 <form action="/" name="artist_search" class="center-center-absolute" ng-submit="getInfluences($event)">
