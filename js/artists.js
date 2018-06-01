@@ -23,7 +23,9 @@ angular.module('musicalInfluences',[])
 				console.log(res.similarartists.artist[0]['image'][2]["#text"]);
 				console.log(res.similarartists.artist.length);
 				for (var i = 0; i < res.similarartists.artist.length; i++){
-					console.log(i);
+					console.log(this);
+					var artist = Artist(this);
+					console.log(artist);
 				}
 				$scope.influences = res.similarartists.artist;
 				$scope.$apply();
