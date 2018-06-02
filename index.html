@@ -9,7 +9,7 @@
 </head>
 <body ng-app="musicalInfluences" ng-controller="mi_Controller as c">
 <header>
-<div id="skins-color">
+<div id="skins-color" ng-controller="skinController as sC">
 	<select name="skin-selector">
 		<option value="default" selected>Default</option>
 		<option value="dusk">Dusk</option>
@@ -43,6 +43,6 @@
 </section>
 </body>
 <script src="js/artists.js"></script>
-<link rel="stylesheet" href="styles/skins/skin_dusk.css" />
+<link rel="stylesheet" href="styles/skins/skin_default.css" id="skin_stylesheet" />
 </html>
 <!-- http://ws.audioscrobbler.com/2.0/?method=artist.getSimilar&artist=[ARTIST]&api_key=95be8d664959f5402c7f75142e65f6ec -->
