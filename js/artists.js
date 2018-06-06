@@ -5,8 +5,7 @@ function Artist(artist) {
 	this.topTrack = function(){};
 }
 
-angular.module('musicalInfluences',[])
-.controller("mi_Controller",function($scope){
+angular.module('musicalInfluences',[]).controller("miController",function($scope){
 	// $scope.influences <-- used by angular ng-repeat on the front end
 	$scope.influences=[];
 	// Make a call on submit to last.fm API, populate $scope.influences array with results.
