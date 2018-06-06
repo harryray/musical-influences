@@ -10,7 +10,7 @@
 <body ng-app="musicalInfluences" ng-controller="mi_Controller as c">
 <header>
 <div id="skins-color" ng-controller="skinController as sC">
-	<select name="skin-selector">
+	<select name="skin-selector" ng-change="getSkin($skin)" ng-model="selectedSkin">
 		<option value="default" selected>Default</option>
 		<option value="dusk">Dusk</option>
 		<option value="placid">Placid</option>
