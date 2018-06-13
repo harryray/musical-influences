@@ -1,7 +1,8 @@
 // Constructor - Artist
 function Artist(artist) {
+	console.log(artist);
 	this.name = name;
-	this.genre = genre;
+	//this.genre = genre;
 	this.topTrack = function(){};
 }
 
